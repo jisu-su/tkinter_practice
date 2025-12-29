@@ -7,5 +7,6 @@ root.geometry("400x300")
 root.configure(bg="black")
 # "Hello, Wordl!" 라벨 생성
 Label = tk.Label(root, text="Hello, World!", fg="white", bg="black", font=("Arial", 24))
+Label.pack(pady=10)
 
 root.mainloop()
