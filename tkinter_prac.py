@@ -3,9 +3,11 @@ import tkinter as tk
 root = tk.Tk()
 # 창 크기 설정
 root.geometry("500x300")
+# 창 배경색 설정
+root.configure(bg="lightblue")
 # "Hello, Wordl!" 라벨 생성
-Label = tk.Label(root, text="Hello, World!", fg="red", bg="black", font=("Courier", 24))
-# 좌우, 상하 여백 설정
-Label.pack(pady=20, padx=20)
+Label = tk.Label(root, text="Hello, World!", fg="red", bg="white", font=("Courier", 35))
+# 정중앙에 만들어 보기
+Label.pack(expand=True)
 
 root.mainloop()
