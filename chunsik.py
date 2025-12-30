@@ -5,6 +5,9 @@ import tkinter as tk
 def draw_chunsik_face(canvas):
     # 얼굴 노란 원 그리기
     canvas.create_oval(100, 100, 300, 300, fill="yellow", outline="black", width=3)
+    # 귀 삼각형 그리기
+    canvas.create_polygon(120, 80, 150, 100, 100, 100, fill="yellow", outline="black")
+    canvas.create_polygon(280, 80, 250, 100, 300, 100, fill="yellow", outline="black")
     # 눈 검은색 원 2개 그리기
     canvas.create_oval(150, 150, 170, 170, fill="black")
     canvas.create_oval(230, 150, 250, 170, fill="black")
@@ -15,6 +18,15 @@ def draw_chunsik_face(canvas):
     # 볼 주황색 원 2개 그리기
     canvas.create_oval(120, 220, 160, 260, fill="orange", outline="black")
     canvas.create_oval(240, 220, 280, 260, fill="orange", outline="black")
+    # 수염 선 그리기
+    # 왼쪽 수염
+    canvas.create_line(140, 200, 100, 190, fill="black", width=2)
+    canvas.create_line(140, 210, 100, 210, fill="black", width=2)
+    canvas.create_line(140, 220, 100, 230, fill="black", width=2)
+    #오른쪽 수염
+    canvas.create_line(260, 200, 300, 190, fill="black", width=2)
+    canvas.create_line(260, 210, 300, 210, fill="black", width=2)
+    
 
 def main():
     # 창 생성하기
