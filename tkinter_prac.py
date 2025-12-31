@@ -12,6 +12,11 @@ root.geometry("500x300")
 # 창 배경색 설정
 root.configure(bg="lightyellow")
 
+def set_window():
+    root.title("button")
+    root.geometry("500x300")
+    root.configure(bg="lightyellow")
+
 # 버튼을 누르면 실행될 함수 
 # def click_button():
 #     label.config(text="버튼이 클릭되었습니다")
