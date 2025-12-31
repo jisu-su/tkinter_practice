@@ -35,9 +35,9 @@ set_window()
 #         label.config(text="버튼이 클릭되었습니다")
 #     else :
 #         label.config(text="버튼을 눌러보세요")
-# 삼항 연산자 이용하기
+# 삼항 연산자 이용하기 (얘도 함수가 필요하다)
 def click_button():
-    new_text = "B" if label.cget("text") == "A" else "A"
+    new_text = "버튼이 클릭되었습니다" if label.cget("text") == "버튼을 눌러보세요" else "버튼을 눌러보세요"
     label.config(text=new_text)
 
 label= tk.Label(root, text="버튼을 눌러보세요", font=("맑은고딕",16))
