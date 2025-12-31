@@ -12,10 +12,15 @@ root = tk.Tk()
 # # 창 배경색 설정
 # root.configure(bg="lightyellow")
 
+# 하드코딩 피하기! 변수를 한대 묶어 보기
+WINDOW_NAME = "button"
+WINDOW_SIZE = "500x300"
+WINDOW_COLOR = "lightyellow"
+
 def set_window():
-    root.title("button")
-    root.geometry("500x300")
-    root.configure(bg="lightyellow")
+    root.title(WINDOW_NAME)
+    root.geometry(WINDOW_SIZE)
+    root.configure(bg=WINDOW_COLOR)
 # 함수 실행을 위해 호출해주기
 set_window()
 
