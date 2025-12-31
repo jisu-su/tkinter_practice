@@ -22,17 +22,19 @@ set_window()
 # 버튼을 누르면 실행될 함수 
 # def click_button():
 #     label.config(text="버튼이 클릭되었습니다")
+
 def click_button():
-    if click_button : 
+    if label.cget("text") == "버튼을 눌러보세요":
         label.config(text="버튼이 클릭되었습니다")
     else :
         label.config(text="버튼을 눌러보세요")
-
 
 label= tk.Label(root, text="버튼을 눌러보세요", font=("맑은고딕",16))
 label.pack(pady=20)
 
 button = tk.Button(root, text="클릭", command=click_button)
 button.pack()
+# cget을 이용해서 버튼을 누를 때마다 다른 문구가 나오도록 설정(토글)
+label.cget("text")
 
 root.mainloop()
