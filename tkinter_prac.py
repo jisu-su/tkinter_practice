@@ -11,14 +11,16 @@ root.title("button")
 root.geometry("500x300")
 # 창 배경색 설정
 root.configure(bg="lightyellow")
+
 # 버튼을 누르면 실행될 함수 
 # def click_button():
 #     label.config(text="버튼이 클릭되었습니다")
+def click_button():
+    if click_button : 
+        label.config(text="버튼이 클릭되었습니다")
+    else :
+        label.config(text="버튼을 눌러보세요")
 
-if click_button : 
-    label.config(text="버튼이 클릭되었습니다")
-else :
-    label.config(text="버튼을 눌러보세요")
 
 label= tk.Label(root, text="버튼을 눌러보세요", font=("맑은고딕",16))
 label.pack(pady=20)
